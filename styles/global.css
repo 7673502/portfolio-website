@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'Cabin';
+    src: url('../assets/fonts/Cabin-VariableFont_wdth\,wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Cabin';
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:100px;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 50px;
+    border: solid;
+    flex-direction: column;
+}
+
+.title {
+    border:solid;
+    text-align: center;
+    font-weight: 900;
+    font-size: 64px;
+}
+
+.subcontent {
+    display: flex;
+    padding: 0px;
+    border: solid;
+    width: 100%;
+    padding:25px;
+}
+
+
+.photo {
+    padding:0px;
+    display:flex;
+    border:solid;
+}
+
+.photo img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    width: 800px;
+
+}
+
+.bio {
+    padding:25px;
+    display:flex;
+    width:100%;
+    height:auto;
+    border:solid;
+}
