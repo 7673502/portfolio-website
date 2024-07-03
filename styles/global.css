@@ -204,14 +204,27 @@ svg:hover {
     .photo {
         width: 100%;
     }
+
+    .bio {
+        padding-bottom: 0;
+    }
 }
 
 @media only screen and (hover: none) and (pointer: coarse){
+    body {
+        font-size: larger;
+    }
+
+    .title {
+        font-size: 64px;
+    }
+
     .content {
         margin: 0;
         border-radius: 0;
         border: none;
     }
+
     .subcontent {
         flex-direction: column;
         align-items: center;
@@ -219,5 +232,9 @@ svg:hover {
 
     .photo {
         width: 100%;
+    }
+
+    .bio {
+        padding-bottom: 0;
     }
 }
