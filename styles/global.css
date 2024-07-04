@@ -49,7 +49,7 @@ body {
     text-align: center;
     font-family: 'Lato-Black';
     font-weight: normal;
-    font-size: 48px;
+    font-size: 64px;
     padding: 0;
     margin: 0;
     letter-spacing: .30rem;
@@ -144,11 +144,15 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 50px;
+    margin: 50px;
     width: 100%;
     flex-direction: row;
     box-sizing: border-box; 
     border: none;
+}
+
+.socials:hover svg {
+    fill: rgb(150, 150, 150);
 }
 
 .resume-button {
@@ -164,6 +168,7 @@ a {
     background-color: none;
     letter-spacing: .15rem;
     border-radius: 8px;
+    background-color: none;
 }
 
 .resume-button:hover {
@@ -172,21 +177,18 @@ a {
     border-color: black;
 }
 
-svg {
+.social-button svg {
     width:30px;
-    padding-left: 5px;
-    padding-right: 5px;
-}
-
-svg {
+    padding-left: 8px;
+    padding-right: 8px;
     fill: black;
     transition-timing-function: ease-in-out;
     transition: 300ms;
     cursor:pointer;
 }
 
-svg:hover {
-    fill: gray;
+.social-button svg:hover {
+    fill: black;
 }
 
 
