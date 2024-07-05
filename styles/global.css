@@ -253,3 +253,79 @@ a {
         padding-bottom: 0;
     }
 }
+
+
+label {
+    width: 80px;
+    height: 40px;
+    position: relative;
+    display: block;
+    background: #e6e6e6;
+    border-radius: 200px;
+    transition: 400ms;
+    padding: 0;
+    margin: 0;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+label:after {
+    content: "";
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: #cfcfcf;
+    border-radius: 40px;
+    transition: 400ms;
+    padding: 0;
+    margin: 0;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+}
+
+input:checked + label {
+    background: #494949;
+}
+
+input:checked + label:after {
+    left: 80px;
+    transform: translateX(-100%);
+    background-color: #555555;
+}
+
+label svg {
+    position: absolute;
+    transform: scale(1);
+    z-index: 100;
+    top: 8px;
+    padding: 0;
+    margin: 0;
+}
+
+label svg.sun {
+    left: 8px;
+    fill: #fff;
+    transition: 400ms;
+}
+
+label svg.moon {
+    left: 48px;
+    fill: #cfcfcf;
+    transition: 400ms;
+}
+
+input:checked + label svg.sun {
+    fill: #555555;
+}
+
+input:checked + label svg.moon {
+    fill: #fff;
+}
